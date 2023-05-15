@@ -11,7 +11,7 @@ O conjunto de treinamento é fornecido como uma lista de pontos no plano, repres
 $$(1, 4), (-1, 5), (2, 7), (-2, 8), (3, 12), (-3, 13), (4, 19), (-4, 20)$$
 
 ### Função do Gradiente Descendente
-A função $\texttt{GradDesc}$ implementa o Gradiente Descendente para ajuste da parábola. Ela recebe como entrada os coeficientes iniciais $w_1$, $w_2$, $b$ e a taxa de aprendizagem $\texttt{lr}$.
+A função $\texttt{GradDesc}$ implementa o Gradiente Descendente para ajuste da parábola. Ela recebe como entrada os coeficientes iniciais $w_1$, $w_2$, $b$ e a taxa de aprendizagem $\texttt{lr}$ ($\gamma$).
 
 Dentro da função, há um loop que itera até que o erro seja menor do que um determinado limiar predefinido. Em cada iteração, o algoritmo calcula o erro quadrático médio entre as previsões da parábola e os valores reais do conjunto de treinamento.
 
@@ -26,7 +26,7 @@ Durante a execução do Gradiente Descendente, uma barra de carregamento é exib
 Ao final das iterações, os coeficientes otimizados $w_1$, $w_2$ e $b$ são retornados pela função $\texttt{GradDesc}$.
 
 ### Execução e Impressão dos Resultados
-O algoritmo é executado chamando a função $\texttt{GradDesc}$ com os coeficientes iniciais e a taxa de aprendizagem desejada. Os coeficientes otimizados são então impressos na tela, mostrando os valores finais de $w_1$, $$w_2$ e $b$.
+O algoritmo é executado chamando a função $\texttt{GradDesc}$ com os coeficientes iniciais e a taxa de aprendizagem desejada. Os coeficientes otimizados são então impressos na tela, mostrando os valores finais de $w_1$, $w_2$ e $b$.
 
 Este código é um exemplo de aplicação do Gradiente Descendente para ajuste de uma parábola aos dados de treinamento fornecidos. Pode ser utilizado como base para realizar ajustes de parábolas em outros conjuntos de dados.
 
